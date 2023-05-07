@@ -12,7 +12,7 @@ public class ReviewService {
     private ReviewRepository reviewRepository;
     @Autowired
     private MongoTemplate mongoTemplate;
-    private Review createReview(String reviewBody, String imdbId){
+    public Review createReview(String reviewBody, String imdbId){
         Review review = reviewRepository.insert(new Review(reviewBody));
 
         mongoTemplate.update(Movie.class)
