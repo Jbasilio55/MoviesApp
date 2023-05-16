@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "https://movie-nugget.herokuapp.com/api/v1/movies";
+const BASE_URL = "https://movie-nugget.herokuapp.com";
 
 export default axios.create({
   baseURL: BASE_URL,
